@@ -18,7 +18,7 @@ String::String(const char * data)
     if(data)
     {
         m_data=new char[strlen(data)+1];
-        strcpy(m_data, data);
+        strcpy(m_data, data); 
     }
     else
     {
@@ -56,5 +56,6 @@ int main()
     cout<<s1.get_c_str()<<endl;
     s1=s;
     cout<<s1.get_c_str()<<endl;
+    
     
 }
